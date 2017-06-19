@@ -1,0 +1,68 @@
+body {
+	margin:0;
+	font-family: helvetica, sans-serif;
+}
+
+header {
+	background-color: lightgrey;
+}
+
+h2 {
+	padding: 10px 0 10px
+}
+
+.wrapper {
+	margin: auto;
+	width: 1220px;
+}
+
+main .wrapper {
+	display: grid;
+	grid-template-columns:400px 400px 400px;
+	grid-template-rows: 250px 250px 250px;
+	grid-column-gap:10px;
+	grid-row-gap:10px;
+
+}
+
+.one {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	background-color: blue;
+}
+
+.two {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	background-color: blue;
+}
+
+.three {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	background-color: blue;
+}
+
+.four {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: blue;
+}
+
+.five {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	background-color: blue;
+}
+
+

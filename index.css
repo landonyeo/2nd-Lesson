@@ -1,0 +1,36 @@
+body {
+	margin: 10px
+}
+
+.outer {
+	position: relative;
+	background-color: teal;
+	padding: 80px;
+}
+
+.innerfixed {
+	position: fixed;
+	background-color: gold;
+	padding: 20px;
+	top: 0px;
+	right: 0px;
+}
+
+.innerabsolute {
+	position: absolute;
+	background-color: gold;
+	padding: 25px;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+
+}
+
+.innerrelative {
+	position: relative;
+	background-color: gold;
+	padding: 40px;
+	top: 10px;
+	left: 0px;
+	height: 200px;
+}
