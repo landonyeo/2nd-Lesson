@@ -1,0 +1,426 @@
+body {
+	margin: 0;
+	font-family: serif;
+}
+
+header { 
+	text-transform: uppercase;
+}
+
+
+.title {
+	max-width: 1180px;
+	margin: 10px auto 0;
+	color: #0c2b57;
+}
+
+.title-note {
+	font-size: 80%;
+	font-family: sans-serif;
+	color: black;
+	float: right;
+	padding: 20px 0 0;
+}
+
+.main-title {
+	font-size: 32px;
+	color: midnightblue;
+}
+
+hr {
+	display: block;
+	height: 0.5px;
+	border: 0; 
+	border-top: 1px solid black;
+	margin: 0.5px 0 0;
+	padding: 0; 
+}
+
+.wrapper {
+	margin: auto;
+	width: 1180px;
+	padding-top: 10px;
+}
+
+main .wrapper{
+	display: grid;
+	grid-template-columns: 280px 280px 280px 280px;
+	grid-template-rows: 103px 103px 103px 103px 103px 103px 103px 103px 103px;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+}
+
+.row-1 {
+	grid-row-start: 1;
+	grid-row-end: 7;
+}
+
+.row-2 {
+	grid-row-start: 7;
+	grid-row-end: 10;
+}
+
+.column-1 {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.column-2 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
+
+.column-3 {
+	grid-column-start: 3;
+	grid-column-end: 5;
+}
+
+.oneblockline {
+	width: 1px;
+	height: 330px;
+	background-color: #eee;
+	margin: auto;
+}
+
+.twoblocksline {
+	width: 1px;
+	height: 668px;
+	background-color: #eee;
+	margin: auto;
+}
+
+.one {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	background-color: #0c2b57;
+	position: relative;
+	background-size: cover;
+}
+
+.two {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	background-color: #eee;
+	position: relative;
+}
+
+.three {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 7;
+	background-color: #eee;
+	position: relative;
+}
+
+.four {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 7;
+	background-color: #DDEAF2;
+}
+
+.five {
+	grid-column-start: 1;
+	grid-column-end: 2;
+	grid-row-start: 7;
+	grid-row-end: 10;
+	background-color: #eee;
+	position: relative;
+}
+
+.six {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 7;
+	grid-row-end: 10;
+	background-color: #eee;
+	position: relative;
+}
+
+.seven {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 7;
+	grid-row-end: 8;
+	background-color: cornflowerblue;
+	position: relative;
+}
+
+.eight {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 8;
+	grid-row-end: 9;
+	background-color: #eee;
+	position: relative;
+}
+
+.nine {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 9;
+	grid-row-end: 10;
+	background-color: #eee;
+	position: relative;
+}
+
+.ten {
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 7;
+	grid-row-end: 10;
+	background-color: #eee;
+}
+
+.headlineimage {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/borealis_retina_large_respondxl4/public/articles/2017/06/19/shan1_0.jpg?itok=ala8s7At);
+	background-size: cover;
+	width: 100%;
+	height: 60%;
+}
+
+.headlinetitle {
+	width: 100%
+	height: 40%;
+
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	cursor: pointer;
+}
+
+a:after {
+	content: '\A';
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(119, 136, 153, 0.2);
+	opacity:0;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+a:hover:after {
+	opacity: 1;
+	color: inherit;
+}
+
+h1, h2, h3, h4 {
+	padding: 0 10px;
+	margin-top: 10px;
+}
+
+h1, h3, p {
+	color: white;
+}
+
+p, h2, h3, h4 {
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 32px;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 23px;
+}
+
+h3, h4 {
+	font-size: 19px;
+}
+
+p {
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+.secondarytitle a {
+	text-decoration: none;
+	color: black;
+}
+
+.secondarytitle a:hover {
+	color: #428bca;
+}
+
+.secondaryimage {
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+}
+
+.box-1 {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/borealis_retina_large_respondxl2/public/media-brightcove/5475990438001.jpg?itok=B0PANA8B);
+}
+
+.box-2 {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2017/06/19/lwx_190617ns.jpg?itok=d38TfwT_);
+}
+
+.box-3 {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2017/06/22/bus.jpg?itok=bhxkyhHA);
+}
+
+.box-4 {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/borealis_retina_large_respondxl2/public/articles/2017/06/22/befunky_collage_2_0.jpg?itok=0zbG5adm);
+}
+
+.newsfooter {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 0 10px;
+}
+
+.newsfooter p {
+	margin: 0;
+	padding: 0 5px;
+	font-family: sans-serif;
+	font-size: 12px;
+	float: left;
+}
+
+.lighterbox p {
+	color: black;
+}
+
+.stnow {
+	background-color: cornflowerblue;
+	height: 55px;
+	position: relative;
+}
+
+.stnow h2 {
+	margin-top: 0;
+	font-size: 20px;
+	padding: 5px 10px;
+	color: white;
+}
+
+.livebanner {
+	position: relative;
+	top: -20px;
+	height: 20px;
+	background-color: orangered;
+
+}
+
+.livebanner p, .livebanner a {
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.livebanner p {
+	font-size: 14px;
+	padding-top: 2px;
+}
+
+.livebanner a {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 10px;
+	padding: 4px;
+	color: white;
+}
+
+.livebanner a:after {
+	content: none;
+}
+
+.stnowfeeds {
+	height: 610px;
+	overflow: auto;
+	font-family: sans-serif;
+	line-height: 1.2em;
+}
+
+ul.stnowfeeds {
+	padding: 0;
+	margin: 0;
+}
+
+.feeds {
+	border-bottom: 1px dotted black;
+}
+
+.feeds h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+}
+
+.feeds p {
+	font-size: 14px;
+	color: inherit;
+}
+
+.feeds a {
+	color: cornflowerblue;
+}
+
+.feeds a:after {
+	content: none;
+}
+
+.timing p {
+	background-color: cornflowerblue;
+	width: 12%;
+	font-weight: bold;
+	color: white;
+	font-size: 12px;
+	padding: 2px 10px;
+}
+
+.loadmore p {
+	background-color: lightgray;
+	font-weight: bold;
+	text-align: center;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.sponsored {
+	background-color: lightsteelblue;
+	height: 20px;
+}
+
+.sponsored h4 {
+	margin-top: 0;
+	padding: 4px 10px;
+	text-transform: uppercase;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: white;
+}
+
+.sponsoredimage {
+	background-image: url(http://www.straitstimes.com/sites/default/files/styles/medium/public/advertorials/2015/09/07/ha386_300x200_default.jpg?itok=zlAuxqwa%20300w);
+}
+
+footer hr {
+	display: block;
+	height: 0.5px;
+	border: 0; 
+	border-top: 1px solid #eee;
+	margin: 0.5px 0 0;
+	padding: 0; 
+}
+
+footer h4 {
+	font-family: sans-serif;
+	font-size: 14px;
+	text-align: right;
+}
